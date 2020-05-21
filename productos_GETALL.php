@@ -3,7 +3,7 @@
 
 	if($_SERVER['REQUEST_METHOD']=='GET'){
 		try{
-			$respuesta = SQLGlobal::query("SELECT * FROM producto");//sin filtro ("No incluir filtros ni '?'")
+			$respuesta = SQLGlobal::query("SELECT * FROM productos");//sin filtro ("No incluir filtros ni '?'")
 			echo json_encode(array(
 				'respuesta'=>'200',
 				'estado' => 'Se obtuvieron los datos correctamente',
